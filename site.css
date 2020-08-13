@@ -4,40 +4,55 @@ body {
     background-color: #010E0C;
 }
 
-.sidenav{
-    height: 100%;                       /* Full Height */
-    width: 160px;                       /* 160 Pixel Width */
-    position: fixed;                    /* Fixed Sidebar */
-    z-index: 1;                         /* Stay ON Top */
-    top: 0;                             /* Stay AT Top*/
-    left:0;                             /* */
-    background-color: #101010;        /* Black-ish*/
-    overflow-x: hidden;                 /* Disable Horizontal Scroll*/
-    padding-top: 20px;                  /* */
+.sidenav {
+  height: 100%;                       /* Full Height */
+  width: 160px;                       /* 160 Pixel Width */
+  position: fixed;                    /* Fixed Sidebar */
+  z-index: 1;                         /* Stay ON Top */
+  top: 0;                             /* Stay AT Top*/
+  left:0;                             /* */
+  background-color: #101010;        /* Black-ish*/
+  overflow-x: hidden;                 /* Disable Horizontal Scroll*/
+  padding-top: 20px;                  /* */
 }
 
 /* The navigation menu links */
 .sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-  }
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
   
   /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
+.sidenav a:hover {
+  color: #f1f1f1;
+}
   
+.resume {
+  height: 800px;
+  margin-left: 160px;
+  padding: 0px 10px;
+  z-index: 1;
+  top: 0;
+  background-color: #fff9f1;
+  text-align: center;
+  color: #000000;
+}
+.resume p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
   /* Style page content */
-  .main {
-    margin-left: 160px; /* Same as the width of the sidebar */
-    padding: 0px 10px;
-  }
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
   
   /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
