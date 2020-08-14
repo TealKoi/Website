@@ -1,0 +1,74 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0 0 0 0;
+  height: 100%;
+  width:  100%;
+  background-color: #dfdfdf;
+  display: flex;
+}
+
+.Toolbar {
+  position: fixed;
+  width:  100%;
+  background-color: #606060;
+  height: 20px;
+}
+
+.Lines {
+  position: fixed;
+  width: 124px;
+  background-color: #dfdfdf;
+  color: #222222;
+  text-align: center;
+  height: 40px;
+}
+
+.Line {
+  float: left;
+  width: 60px;
+  border: 1px solid black;
+}
+
+#line-chart {
+  position: fixed;
+  top: 110px;
+}
+
+.Header {
+  position: fixed;
+  width: 100%;
+  top: 20px;
+  left: 60px;
+  border-bottom: 1px solid black;
+  background-color: #808080;
+  height: 50px;
+}
+
+.Server-Bar {
+  height: 100%;
+  background-color: #606060;
+  flex: 0 0 60px;
+}
+
+.Channel-Bar {
+  height: 100%;
+  background-color: #808080;
+  flex: 0 0 200px;
+}
+
+.Channel-Content {
+  position: relative;
+  top: 70px;
+  height: 100%;
+  background-color: #efefef;
+  flex: 1;
+}
+
+.Users {
+  height: 100%;
+  background-color: #808080;
+  flex: 0 0 180px;
+}

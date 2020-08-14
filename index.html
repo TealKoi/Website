@@ -2,17 +2,31 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="site.css">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script src="./resources/plotly-latest.min.js"></script>
   <title>Wright-Post Home</title>
 </head>
 <body>
-<div class="sidenav">
-  <a href="#">Home</a>
-  <a href="./about.html">About</a>
-  <a href="./resume.html">Resume</a>
-</div>
-<div class="main">
 
+<div class="Toolbar"></div>
+<div class="Header"></div>
+<div class="Server-Bar"></div>
+<div class="Channel-Bar"></div>
+<div class="Channel-Content">
+  <div class="Lines">
+    <div class="Line">
+    Line 1
+    <div id="L1Log"></div>
+    </div>
+    <div class="Line">Line 2
+    <div id="L2Log"></div>
+    </div>
+  </div>
+  <div id="line-chart"></div>
 </div>
+<div class="Users"></div>
+
+<script src="index.js"></script>
+
 </body>
 </html>
