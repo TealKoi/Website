@@ -2,73 +2,92 @@ html {
   height: 100%;
 }
 
+/* Master Styles */
 body {
-  margin: 0 0 0 0;
-  height: 100%;
-  width:  100%;
-  background-color: #dfdfdf;
+  margin: 0px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* Navigation Styles */
+.nav-wrapper {
   display: flex;
+  justify-content: space-between;
+  padding: 25px 5px;
+  background-color: #f0f0f0;
 }
 
-.Toolbar {
-  position: fixed;
-  width:  100%;
-  background-color: #606060;
-  height: 20px;
+.nav-wrapper-center {
+  display: flex;
+  align-items: center;
 }
 
-.Lines {
-  position: fixed;
-  width: 124px;
-  background-color: #dfdfdf;
-  color: #222222;
-  text-align: center;
-  height: 40px;
+.nav-wrapper-right {
+  display: flex;
+  align-items: center;
 }
 
-.Line {
-  float: left;
-  width: 60px;
-  border: 1px solid black;
+.nav-wrapper > .nav-wrapper-center > div {
+  font-size: 1.7em;
 }
 
-#line-chart {
-  position: fixed;
-  top: 110px;
+.name-wrapper {
+  font-weight: bold;
 }
 
-.Header {
-  position: fixed;
-  width: 100%;
-  top: 20px;
-  left: 60px;
-  border-bottom: 1px solid black;
-  background-color: #808080;
-  height: 50px;
+/* Portfolio Styles */
+
+.portfolio-items-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-.Server-Bar {
-  height: 100%;
-  background-color: #606060;
-  flex: 0 0 60px;
-}
-
-.Channel-Bar {
-  height: 100%;
-  background-color: #808080;
-  flex: 0 0 200px;
-}
-
-.Channel-Content {
+.portfolio-item-wrapper {
   position: relative;
-  top: 70px;
-  height: 100%;
-  background-color: #efefef;
-  flex: 1;
 }
 
-.Users {
+.portfolio-img-background {
+  transition: 1s;
+  height: 300px;
+  width:  100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100%;
-  background-color: #808080;
-  flex: 0 0 180px;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.logo-wrapper img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.img-text-wrapper .subtitle {
+  transition: 1s;
+  font-weight: 600;
+  color: transparent;
+}
+
+.img-text-wrapper:hover .subtitle {
+  font-weight: 600;
+  color: lightseagreen;
+}
+
+.img-darken {
+  transition: 1s;
+  filter: brightness(10%);
 }
