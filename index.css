@@ -7,6 +7,14 @@ body {
   margin: 0px;
 }
 
+a {
+  color: #303030;
+}
+
+a:hover {
+  color: #606060;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr;
@@ -20,22 +28,36 @@ body {
   background-color: #f0f0f0;
 }
 
+.nav-wrapper-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-wrapper > .nav-wrapper-left > .personality-wrapper {
+  font-size: 1.2em;
+}
+
 .nav-wrapper-center {
   display: flex;
   align-items: center;
+  flex-direction: column;
+}
+
+.nav-wrapper > .nav-wrapper-center > .name-wrapper {
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+.nav-wrapper > .nav-wrapper-center > .contact-wrapper {
+  font-size: 1.2em;
 }
 
 .nav-wrapper-right {
   display: flex;
-  align-items: center;
 }
 
-.nav-wrapper > .nav-wrapper-center > div {
-  font-size: 1.7em;
-}
-
-.name-wrapper {
-  font-weight: bold;
+.nav-wrapper > .nav-wrapper-right > .DateStamp {
+  font-size: 0.7em;
 }
 
 /* Portfolio Styles */
@@ -72,7 +94,7 @@ body {
 }
 
 .logo-wrapper img {
-  width: 100%;
+  width: 80%;
   margin-bottom: 20px;
 }
 
@@ -84,7 +106,7 @@ body {
 
 .img-text-wrapper:hover .subtitle {
   font-weight: 600;
-  color: lightseagreen;
+  color: #4bb8b8;
 }
 
 .img-darken {
