@@ -8,11 +8,11 @@ body {
 }
 
 a {
-  color: #303030;
+  color: #dfdfdf;
 }
 
 a:hover {
-  color: #606060;
+  color: #6d83ff;
 }
 
 .container {
@@ -22,10 +22,12 @@ a:hover {
 
 /* Navigation Styles */
 .nav-wrapper {
+  position: relative;
   display: flex;
   justify-content: space-between;
   padding: 25px 5px;
-  background-color: #f0f0f0;
+  background-image: url("./resources/images/milkyway.jpg");
+  background-size: cover;
 }
 
 .nav-wrapper-left {
@@ -46,6 +48,7 @@ a:hover {
 .nav-wrapper > .nav-wrapper-center > .name-wrapper {
   font-size: 1.7em;
   font-weight: bold;
+  color: #dfdfdf;
 }
 
 .nav-wrapper > .nav-wrapper-center > .contact-wrapper {
@@ -54,10 +57,12 @@ a:hover {
 
 .nav-wrapper-right {
   display: flex;
+  align-items: center;
 }
 
 .nav-wrapper > .nav-wrapper-right > .DateStamp {
   font-size: 0.7em;
+  color: #dfdfdf;
 }
 
 /* Portfolio Styles */
