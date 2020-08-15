@@ -74,6 +74,8 @@ a:hover {
 
 .portfolio-item-wrapper {
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .portfolio-img-background {
@@ -99,17 +101,18 @@ a:hover {
 }
 
 .logo-wrapper img {
-  width: 80%;
+  width: 150px;
   margin-bottom: 20px;
 }
 
 .img-text-wrapper .subtitle {
-  transition: 1s;
+  font-size: 0.0em;
   font-weight: 600;
   color: transparent;
 }
 
 .img-text-wrapper:hover .subtitle {
+  font-size: 0.8em;
   font-weight: 600;
   color: #4bb8b8;
 }
