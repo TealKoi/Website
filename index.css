@@ -101,12 +101,14 @@ a:hover {
 }
 
 .img-text-wrapper .subtitle {
+  font-family: "Roboto";
   font-size: 0.0em;
   font-weight: 600;
   color: transparent;
 }
 
 .img-text-wrapper:hover .subtitle {
+  font-family: "Roboto";
   font-size: 0.8em;
   font-weight: 600;
   color: #4bb8b8;
